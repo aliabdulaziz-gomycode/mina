@@ -1,0 +1,57 @@
+/****************************************
+We always add the following code: 
+page setup
+*****************************************/
+* {
+    /* default: content-box */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+/****************************************
+flexbox code
+
+Remember: in flex we don't use directions
+or width / height.
+*****************************************/
+
+/* This is our flex container */
+#my-div {
+    max-width: 300px;
+    border: 3px solid #000;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    /* flex-wrap will create multiple lines (rows / columns) */
+    flex-wrap: wrap;
+    /* This is why we use align-conent to control these lines */
+    /* align-content: stretch; */
+}
+
+/* The followings are flex items */
+
+#my-div > div:first-child {
+    border: 2px solid red;
+}
+
+#my-div > div:nth-child(2) {
+    border: 2px solid green;
+}
+
+#my-div > div:last-child {
+    border: 2px solid blue;
+}
+
+#my-div > div {
+    flex-basis: 33.3333333333%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+

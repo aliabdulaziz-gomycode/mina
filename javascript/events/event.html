@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This example uses event lisnter which 
+        is defined inside the script file -->
+    <button id="my-button">Click on me! (1)</button>
+
+    <br>
+    <br>
+
+    <!-- This exaple uses event listner which is 
+        defined on the element-->
+    <button id="button-2" onclick="showAlert(event)">Click on me! (2)</button>
+
+    <br>
+    <br>
+
+    <!-- In this example we are using innerHTML to add elements -->
+    <button id="add-element-button">Click to add new element using innerHTML</button>
+
+    <br>
+    <br>
+
+    <!-- elements will be added inside this div using javascript -->
+    <div id="app"></div>
+
+    <div id="app2"></div>
+
+    <!-- the script contains an event listener 
+        which listens to page loading event -->
+    <script src="events.js"></script>
+</body>
+</html>
