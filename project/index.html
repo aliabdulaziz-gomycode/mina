@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="vh-100 d-flex flex-column">
+
+    <!-- This is my header -->
+    <header class="py-3 d-flex justify-content-between">
+        <div class="px-3">
+            <span>LOGO</span>
+        </div>
+        <div class="px-3 d-flex">
+            <div>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="ps-2">
+                <div class="badge bg-primary text-white">0</div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="d-flex border-top border-bottom">
+        <a href="#" class="p-3 text-decoration-none border-end">Home</a>
+        <a href="#" class="p-3 text-decoration-none border-end">Categories</a>
+        <a href="#" class="p-3 text-decoration-none border-end">About</a>
+        <a href="#" class="p-3 text-decoration-none border-end">Cotact</a>
+    </nav>
+
+    <!-- This is main -->
+    <main>
+        <div class="container py-3">
+            <div id="products" class="row">
+                <!-- content will load here by javascript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- This is footer -->
+    <footer class="p-3 border-top text-center">
+        mywebsite &copy; 2021
+    </footer>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
